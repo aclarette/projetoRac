@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Técnico | Bancada Elétrica COTEMIG</title>
+    <style>
+        :root {
+            --lilás: #9b59b6;
+            --lilás-escuro: #8e44ad;
+            --rosa-claro: #ffdae9;
+            --rosa-hover: #ffb6c1;
+            --fundo: #fffafa;
+            --texto: #444;
+            --fase: #e74c3c;
+            --neutro: #3498db;
+            --terra: #27ae60;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
+        
+        body { background-color: var(--fundo); color: var(--texto); line-height: 1.6; }
+
+        header { 
+            background: linear-gradient(135deg, var(--lilás-escuro), var(--lilás));
+            color: white; 
+            padding: 4rem 1rem; 
+            text-align: center; 
+            border-bottom: 8px solid var(--rosa-claro);
+        }
+        
+        .grupo { font-size: 1.1rem; color: var(--rosa-claro); margin-top: 15px; font-weight: 300; }
+
+        .container { max-width: 1100px; margin: -2rem auto 2rem; background: white; padding: 3rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(155, 89, 182, 0.1); border: 1px solid var(--rosa-claro); }
+
+        h2 { color: var(--lilás-escuro); margin: 2.5rem 0 1rem; display: flex; align-items: center; border-bottom: 2px solid var(--rosa-claro); padding-bottom: 10px; }
+
+        p { margin-bottom: 1.5rem; text-align: justify; }
+
+        /* Estilo da Galeria RAC2 a RAC10 */
+        .galeria-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 20px; 
+            margin: 2rem 0; 
+        }
+        
+        .foto-card { 
+            border-radius: 12px; 
+            overflow: hidden; 
+            border: 2px solid var(--rosa-claro); 
+            background: #fff; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .foto-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(155, 89, 182, 0.2);
+            border-color: var(--lilás);
+        }
+        
+        .foto-card img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+            display: block; 
+            background: #f0f0f0;
+        }
+        
+        .legenda-foto { 
+            background: var(--rosa-claro); 
+            color: var(--lilás-escuro); 
+            padding: 10px; 
+            font-size: 0.85rem; 
+            font-weight: bold; 
+            text-align: center;
+        }
+
+        .grid-tecnico { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 2rem; }
+        .card-fio { padding: 1.2rem; border-radius: 10px; text-align: center; color: white; font-weight: bold; font-size: 0.9rem; }
+        .fase { background-color: var(--fase); }
+        .neutro { background-color: var(--neutro); }
+        .terra { background-color: var(--terra); }
+
+        .aviso { background: #fff0f5; border: 2px dashed var(--lilás); padding: 20px; border-radius: 10px; margin: 2rem 0; display: flex; align-items: center; }
+        .aviso-icon { font-size: 2rem; margin-right: 20px; }
+
+        footer { text-align: center; padding: 3rem; color: var(--lilás); font-weight: bold; font-size: 0.8rem; }
+
+        ul { margin-left: 25px; margin-bottom: 1.5rem; }
+        li { margin-bottom: 10px; }
+        
+        @media (max-width: 600px) {
+            .container { padding: 1.5rem; margin-top: 0; border-radius: 0; }
+            .galeria-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Relatório Prático: Circuitos Residenciais</h1>
+        <div class="grupo">Equipe: Ana Clara, Ana Karolina, Ingrid e Sara</div>
+    </header>
+
+    <div class="container">
+        
+        <h2>1. Introdução e Identificação</h2>
+        <p>Este documento apresenta o registo visual e técnico da montagem de circuitos elétricos em bancada. O projeto focou na aplicação da <strong>NBR-5410</strong> para garantir a segurança dos utilizadores e a integridade dos componentes através da correta identificação e proteção.</p>
+
+        <h2>2. Galeria de Registo Visual</h2>
+        <p>Abaixo seguem os registos fotográficos detalhados da execução prática, desde a organização dos condutores até ao teste final de carga.</p>
+
+        <div class="galeria-grid">
+            <div class="foto-card">
+                <img src="rac2.jpeg" alt="Registo RAC2">
+            </div>
+            <div class="foto-card">
+                <img src="rac3.jpeg" alt="Registo RAC3">
+            </div>
+            <div class="foto-card">
+                <img src="rac4.jpeg" alt="Registo RAC4">
+            </div>
+            <div class="foto-card">
+                <img src="rac5.jpeg" alt="Registo RAC5">
+            </div>
+            <div class="foto-card">
+                <img src="rac6.jpeg" alt="Registo RAC6">
+            </div>
+            <div class="foto-card">
+                <img src="rac7.jpeg" alt="Registo RAC7">
+            </div>
+            <div class="foto-card">
+                <img src="rac8.jpeg" alt="Registo RAC8">
+            </div>
+            <div class="foto-card">
+                <img src="rac9.jpeg" alt="Registo RAC9">
+            </div>
+            <div class="foto-card">
+                <img src="rac10.jpeg" alt="Registo RAC10">
+                
+            </div>
+        </div>
+
+        <h2>3. Padrões Utilizados (NBR-5410)</h2>
+        <div class="grid-tecnico">
+            <div class="card-fio fase">FASE (Vermelho/Preto)</div>
+            <div class="card-fio neutro">NEUTRO (Azul)</div>
+            <div class="card-fio terra">TERRA (Verde)</div>
+        </div>
+
+        <h2>4. Notas de Segurança e Diagnóstico</h2>
+        <ul>
+            <li><strong>Proteção:</strong> Uso de disjuntor termomagnético contra sobrecargas e curtos-circuitos.</li>
+            <li><strong>Medição:</strong> Multímetro em 600V AC para validar os 127V nominais.</li>
+            <li><strong>Tomadas:</strong> Padrão NBR 14136 diferenciando 10A e 20A.</li>
+        </ul>
+
+        <div class="aviso">
+            <div class="aviso-icon">⚠️</div>
+            <div>
+                <strong>Dica de Ouro:</strong> Nunca utilize extensões enroladas enquanto ligadas a cargas potentes. O <strong>Efeito Joule</strong> acumulado pode derreter o plástico e causar incêndios.
+            </div>
+        </div>
+
+        <h2>5. Diferencial: 220V</h2>
+        <p>A utilização de 220V permite fios de menor secção para a mesma potência, reduzindo o aquecimento da fiação e o desperdício de energia por calor.</p>
+
+    </div>
+
+    <footer>
+        RELATÓRIO TÉCNICO - COTEMIG 2026
+    </footer>
+
+</body>
+</html>
